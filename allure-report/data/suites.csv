@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","13149","Buttons Interaction","chromium","Thu Jan 22 22:32:49 IST 2026","passed","Thu Jan 22 22:33:03 IST 2026","DemoQA Elements Page Tests","","",""
+"","14879","Links Redirection","chromium","Thu Jan 22 22:32:49 IST 2026","passed","Thu Jan 22 22:33:04 IST 2026","DemoQA Elements Page Tests","","",""
+"","13136","Web Tables - Add New Record","chromium","Thu Jan 22 22:32:49 IST 2026","passed","Thu Jan 22 22:33:03 IST 2026","DemoQA Elements Page Tests","","",""
+"","16680","Check Box Selection","chromium","Thu Jan 22 22:32:49 IST 2026","passed","Thu Jan 22 22:33:06 IST 2026","DemoQA Elements Page Tests","","",""
+"","13619","Radio Button Selection","chromium","Thu Jan 22 22:32:49 IST 2026","passed","Thu Jan 22 22:33:03 IST 2026","DemoQA Elements Page Tests","","",""
+"","13669","Text Box Form Submission","chromium","Thu Jan 22 22:32:49 IST 2026","passed","Thu Jan 22 22:33:03 IST 2026","DemoQA Elements Page Tests","","",""
