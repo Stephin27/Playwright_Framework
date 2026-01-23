@@ -1,5 +1,7 @@
 export const TestData = {
     URL: 'https://demoqa.com/elements',
+    ALERTS_URL: 'https://demoqa.com/alerts',
+    WIDGETS_URL: 'https://demoqa.com/widgets',
     TEXT_BOX: {
         FULL_NAME: 'John Doe',
         EMAIL: 'john.doe@example.com',

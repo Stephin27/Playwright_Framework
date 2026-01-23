@@ -4,8 +4,9 @@
   "description": "Playwright Automation Framework with POM and Allure Reporting",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
-    "report": "allure generate allure-results -o allure-report --clean && allure open allure-report"
+    "test": "playwright test && npm run report:single || npm run report:single",
+    "report": "allure generate allure-results -o allure-report --clean && allure open allure-report",
+    "report:single": "allure generate allure-results -o allure-report --clean && allure-combine allure-report"
   },
   "keywords": [
     "playwright",
