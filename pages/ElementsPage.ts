@@ -15,19 +15,22 @@ export class ElementsPage {
     private currentAddressInput = '#currentAddress';
     private permanentAddressInput = '#permanentAddress';
     private submitButton = '#submit';
-    private outputArea = '#output';
+    public outputArea = '#output';
+    public outputName = '#name';
+    public outputEmail = '#email';
 
     // Check Box Locators
     private checkBoxMenu = '//span[text()="Check Box"]';
     private homeCheckbox = 'label[for="tree-node-home"] span.rct-checkbox';
+    public homeCheckboxInput = 'label[for="tree-node-home"] input';
     private expandAllButton = 'button[title="Expand all"]';
-    private resultDisplay = '#result';
+    public resultDisplay = '#result';
 
     // Radio Button Locators
     private radioButtonMenu = '//span[text()="Radio Button"]';
     private yesRadioLabel = 'label[for="yesRadio"]';
     private impressiveRadioLabel = 'label[for="impressiveRadio"]';
-    private successMessage = '.text-success';
+    public successMessage = '.text-success';
 
     // Web Tables Locators
     private webTablesMenu = '//span[text()="Web Tables"]';
@@ -40,15 +43,16 @@ export class ElementsPage {
     private salaryInput = '#salary';
     private departmentInput = '#department';
     private submitFormButton = '#submit';
+    public tableBody = '.rt-tbody';
 
     // Buttons Locators
     private buttonsMenu = '//span[text()="Buttons"]';
     private doubleClickBtn = '#doubleClickBtn';
     private rightClickBtn = '#rightClickBtn';
     private dynamicClickBtn = 'button:text("Click Me")'; // Often has dynamic ID, text is safer
-    private doubleClickMessage = '#doubleClickMessage';
-    private rightClickMessage = '#rightClickMessage';
-    private dynamicClickMessage = '#dynamicClickMessage';
+    public doubleClickMessage = '#doubleClickMessage';
+    public rightClickMessage = '#rightClickMessage';
+    public dynamicClickMessage = '#dynamicClickMessage';
 
     // Links Locators
     private linksMenu = '//span[text()="Links"]';

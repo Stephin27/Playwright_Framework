@@ -24,28 +24,28 @@ test.describe('DemoQA Elements Page Tests', () => {
         );
 
         // Assertions
-        await Assertions.assertElementVisible(page, '#output');
-        await Assertions.assertElementContainsText(page, '#name', TestData.TEXT_BOX.FULL_NAME);
-        await Assertions.assertElementContainsText(page, '#email', TestData.TEXT_BOX.EMAIL);
+        await Assertions.assertElementVisible(page, elementsPage.outputArea);
+        await Assertions.assertElementContainsText(page, elementsPage.outputName, TestData.TEXT_BOX.FULL_NAME);
+        await Assertions.assertElementContainsText(page, elementsPage.outputEmail, TestData.TEXT_BOX.EMAIL);
     });
 
     test('Check Box Selection', async ({ page }) => {
         await elementsPage.navigateToCheckBox();
         await elementsPage.selectHomeCheckbox();
 
-        await Assertions.assertElementVisible(page, '#result');
-        await Assertions.assertElementContainsText(page, '#result', 'You have selected');
-        await Assertions.assertCheckboxChecked(page, 'label[for="tree-node-home"] input');
+        await Assertions.assertElementVisible(page, elementsPage.resultDisplay);
+        await Assertions.assertElementContainsText(page, elementsPage.resultDisplay, 'You have selected');
+        await Assertions.assertCheckboxChecked(page, elementsPage.homeCheckboxInput);
     });
 
     test('Radio Button Selection', async ({ page }) => {
         await elementsPage.navigateToRadioButton();
         await elementsPage.selectYesRadio();
 
-        await Assertions.assertElementText(page, '.text-success', 'Yes');
+        await Assertions.assertElementText(page, elementsPage.successMessage, 'Yes');
 
         await elementsPage.selectImpressiveRadio();
-        await Assertions.assertElementText(page, '.text-success', 'Impressive');
+        await Assertions.assertElementText(page, elementsPage.successMessage, 'Impressive');
     });
 
     test('Web Tables - Add New Record', async ({ page }) => {
@@ -60,7 +60,7 @@ test.describe('DemoQA Elements Page Tests', () => {
         );
 
         // Verify the new record appears in the table
-        const gridCell = page.locator('.rt-tbody');
+        const gridCell = page.locator(elementsPage.tableBody);
         await expect(gridCell).toContainText(TestData.WEB_TABLE.EMAIL);
         await expect(gridCell).toContainText(TestData.WEB_TABLE.FIRST_NAME);
     });
@@ -70,15 +70,15 @@ test.describe('DemoQA Elements Page Tests', () => {
 
         // Double Click
         await elementsPage.doubleClickButton();
-        await Assertions.assertElementText(page, '#doubleClickMessage', 'You have done a double click');
+        await Assertions.assertElementText(page, elementsPage.doubleClickMessage, 'You have done a double click');
 
         // Right Click
         await elementsPage.rightClickButton();
-        await Assertions.assertElementText(page, '#rightClickMessage', 'You have done a right click');
+        await Assertions.assertElementText(page, elementsPage.rightClickMessage, 'You have done a right click');
 
         // Dynamic Click
         await elementsPage.clickDynamicButton();
-        await Assertions.assertElementText(page, '#dynamicClickMessage', 'You have done a dynamic click');
+        await Assertions.assertElementText(page, elementsPage.dynamicClickMessage, 'You have done a dynamic click');
     });
 
     test('Links Redirection', async ({ page, context }) => {
