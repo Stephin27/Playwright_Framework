@@ -1,0 +1,118 @@
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests\forms\practiceForm.spec.ts:32:9 › Data-Driven Practice Form Tests › Submit Form with Excel Data
+[1A[2K[chromium] › tests\forms\practiceForm.spec.ts:32:9 › Data-Driven Practice Form Tests › Submit Form with Excel Data
+Processing row 1: {
+  FirstName: [32m'Alice'[39m,
+  LastName: [32m'Wonderland'[39m,
+  Email: [32m'alice@example.com'[39m,
+  Gender: [32m'Female'[39m,
+  Mobile: [32m'1234567890'[39m,
+  DateOfBirth: [32m'15 Mar 2000'[39m,
+  Subjects: [32m'Maths, English'[39m,
+  Hobbies: [32m'Reading, Music'[39m,
+  Address: [32m'123 Rabbit Hole'[39m,
+  State: [32m'NCR'[39m,
+  City: [32m'Delhi'[39m
+}
+
+[1A[2K  1) [chromium] › tests\forms\practiceForm.spec.ts:32:9 › Data-Driven Practice Form Tests › Submit Form with Excel Data › Submitting form for Alice Wonderland 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for getByText('Reading', { exact: true })[22m
+    [2m    - locator resolved to <label title="" for="hobbies-checkbox-2" class="custom-control-label">Reading</label>[22m
+    [2m  - attempting click action[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+    [2m    - <td></td> from <div role="dialog" tabindex="-1" aria-modal="true" class="fade modal show" aria-labelledby="example-modal-sizes-title-lg">…</div> subtree intercepts pointer events[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+    [2m    - <div class="modal-footer">…</div> from <div role="dialog" tabindex="-1" aria-modal="true" class="fade modal show" aria-labelledby="example-modal-sizes-title-lg">…</div> subtree intercepts pointer events[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting 20ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+    [2m    - <td>15 March,2000</td> from <div role="dialog" tabindex="-1" aria-modal="true" class="fade modal show" aria-labelledby="example-modal-sizes-title-lg">…</div> subtree intercepts pointer events[22m
+    [2m  2 × retrying click action[22m
+    [2m      - waiting 100ms[22m
+    [2m      - waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div class="modal-header">…</div> from <div role="dialog" tabindex="-1" aria-modal="true" class="fade modal show" aria-labelledby="example-modal-sizes-title-lg">…</div> subtree intercepts pointer events[22m
+    [2m  11 × retrying click action[22m
+    [2m       - waiting 500ms[22m
+    [2m       - waiting for element to be visible, enabled and stable[22m
+    [2m       - element is visible, enabled and stable[22m
+    [2m       - scrolling into view if needed[22m
+    [2m       - done scrolling[22m
+    [2m       - <div class="modal-footer">…</div> from <div role="dialog" tabindex="-1" aria-modal="true" class="fade modal show" aria-labelledby="example-modal-sizes-title-lg">…</div> subtree intercepts pointer events[22m
+    [2m     - retrying click action[22m
+    [2m       - waiting 500ms[22m
+    [2m       - waiting for element to be visible, enabled and stable[22m
+    [2m       - element is visible, enabled and stable[22m
+    [2m       - scrolling into view if needed[22m
+    [2m       - done scrolling[22m
+    [2m       - <td>15 March,2000</td> from <div role="dialog" tabindex="-1" aria-modal="true" class="fade modal show" aria-labelledby="example-modal-sizes-title-lg">…</div> subtree intercepts pointer events[22m
+    [2m     - retrying click action[22m
+    [2m       - waiting 500ms[22m
+    [2m       - waiting for element to be visible, enabled and stable[22m
+    [2m       - element is visible, enabled and stable[22m
+    [2m       - scrolling into view if needed[22m
+    [2m       - done scrolling[22m
+    [2m       - <div class="modal-header">…</div> from <div role="dialog" tabindex="-1" aria-modal="true" class="fade modal show" aria-labelledby="example-modal-sizes-title-lg">…</div> subtree intercepts pointer events[22m
+    [2m     - retrying click action[22m
+    [2m       - waiting 500ms[22m
+    [2m       - waiting for element to be visible, enabled and stable[22m
+    [2m       - element is visible, enabled and stable[22m
+    [2m       - scrolling into view if needed[22m
+    [2m       - done scrolling[22m
+    [2m       - <div class="modal-header">…</div> from <div role="dialog" tabindex="-1" aria-modal="true" class="fade modal show" aria-labelledby="example-modal-sizes-title-lg">…</div> subtree intercepts pointer events[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting 500ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+    [2m    - <div class="modal-footer">…</div> from <div role="dialog" tabindex="-1" aria-modal="true" class="fade modal show" aria-labelledby="example-modal-sizes-title-lg">…</div> subtree intercepts pointer events[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting 500ms[22m
+
+
+       at ..\pages\PracticeFormPage.ts:110
+
+      108 |         if (data.Hobbies) {
+      109 |             if (data.Hobbies.includes('Sports')) await this.hobbiesSportsCheckbox.click();
+    > 110 |             if (data.Hobbies.includes('Reading')) await this.hobbiesReadingCheckbox.click();
+          |                                                                                     ^
+      111 |             if (data.Hobbies.includes('Music')) await this.hobbiesMusicCheckbox.click();
+      112 |         }
+      113 |
+        at PracticeFormPage.fillForm (D:\Playwright_Framework\pages\PracticeFormPage.ts:110:85)
+        at D:\Playwright_Framework\tests\forms\practiceForm.spec.ts:36:17
+        at D:\Playwright_Framework\tests\forms\practiceForm.spec.ts:35:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\forms-practiceForm-Data-Dr-12bd0-Submit-Form-with-Excel-Data-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\forms-practiceForm-Data-Dr-12bd0-Submit-Form-with-Excel-Data-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\forms-practiceForm-Data-Dr-12bd0-Submit-Form-with-Excel-Data-chromium\error-context.md
+
+
+[1A[2K  1 failed
+    [chromium] › tests\forms\practiceForm.spec.ts:32:9 › Data-Driven Practice Form Tests › Submit Form with Excel Data 

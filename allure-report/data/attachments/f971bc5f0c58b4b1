@@ -1,0 +1,459 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - img "adplus-dvertising" [ref=e6] [cursor=pointer]
+    - iframe [ref=e9]:
+      - generic [active] [ref=f6e1]:
+        - generic [ref=f6e5]:
+          - link [ref=f6e6] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/aclk?nis=4&sa=l&ai=CTStX8xhzafHdK8W5ssUPvaa1qQr59ofthAGlp8G24hSf_96kiCoQASDG-9Z5YOXK5YO0DqAB6tT86ALIAQmpAlFsqcAvtbM-4AIAqAMByAPLBKoEqgJP0ALNYkBBeT0w4MKxhsr06NOloMQN6k4_fOWBDSr-5Dq_ctUuZR9zOOaYMMfwSrALDMQyLV4jCNas8qqAcLenYS60eKboxxTV7b-6V_9K6D6taVx9sgKVdOSV7McO6eip7tXnbriIT0yfwSf9CYrXU9jltrOqDLEDWrjll--qFOI2-b2-bJZ96zUXIBikXH879nJs9p9g3Bl6wLLb-sFvRsI-7oofddwrCAoZy2-iztvqlpqCKfTFsRf17ZfFJk6Wis-N-05hhxETKrQVzV0BTiWocODtjPBohfgWGQ7oSxPMGNIs1LDggrH8Md8hRjdB9WHCr6ez1wKJBKeo6UD3dukUdD4DJmEN81ScFojjIUVgdd2d1t3rVys8WbbggUi_M4zymOpyBwsKwAS7y_yQtAXgBAGIBf6KpeNVoAYugAf-qoOXAagHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgHyqmxAqgH66WxAqgH6rGxAqgHmbWxAqgHvrexAqgH-MKxAqgH-8KxAtgHANIILwiAYRABGJ0BMgiKgoCAgICACDoNgECAwICAgICogAKoA0i9_cE6WIfb8fuHoZID8ggbYWR4LXN1YnN5bi0zNTIwNjE3MzQxNjY1NTkysQksWUsrVR0hEoAKA5gLAcgLAYAMAdoMEAoKEMDn2NH9kaXENxICAQOqDQJJTsgNAeINEwiIk_L7h6GSAxXFnKwCHT1TLaXqDRMI3-_y-4ehkgMVxZysAh09Uy2l8A0CiA7___________8BuBPkA9gTDNAVAcoWAgoA-BYBgBcBshcOGAEqCjYxNjg1NzY1MDW6FwI4AaoYFwkAAAAAjqUnQRIKNjE2ODU3NjUwNRgBshgJEgKkZhguIgEA0BgB6BgBwhkCCAE&ae=1&ase=2&gclid=EAIaIQobChMIsaPz-4ehkgMVxZysAh09Uy2lEAEYASAAEgJMi_D_BwE&num=1&cid=CAQSswEA56J1ebLjWd5f_wD-toDwKEo-_qZNr6r3Kvf0Gdxs53cSqGyaIiZypBFppiq5hzhrFDHxmljCLE3oHMgzIotq1kprVb6X9G_YmA79Lk8VEtmcC02QfbPOC_DScynfYJi2rsIJZGkbo33Mah0TbQPVqUByo04j3AzfPIMdV4r0S8U8I4DT8MK6f90JkPdMT88yiCjpbhI-0B5tmRyWKAeIywOveBuIoB-Vsx7PuxzgGOdatBgB&sig=AOD64_1k5VaIdLkxCNLJcIfFbvzQisH27w&client=ca-pub-4573231550355221&rf=1&nb=9&adurl=https://sonarsource.com/sem/vibe-then-verify/%3Fs_campaign%3DTOFU_APJ_IN-Brand-EngagedVisitors%26s_content%3DPMax-VibeThenVerify%26s_term%3D%26s_category%3DPaid%26s_source%3DPaid%2520Cross%2520Network%26s_origin%3DGoogle%26cq_src%3Dgoogle_ads%26cq_cmp%3D23021164277%26cq_con%3D%26cq_term%3D%26cq_med%3D%26cq_plac%3D%26cq_net%3Dx%26cq_pos%3D%26cq_plt%3Dgp%26gad_source%3D5%26gad_campaignid%3D23025239422%26gclid%3DEAIaIQobChMIsaPz-4ehkgMVxZysAh09Uy2lEAEYASAAEgJMi_D_BwE
+            - img [ref=f6e7]
+          - link [ref=f6e9] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/aclk?nis=4&sa=l&ai=CTStX8xhzafHdK8W5ssUPvaa1qQr59ofthAGlp8G24hSf_96kiCoQASDG-9Z5YOXK5YO0DqAB6tT86ALIAQmpAlFsqcAvtbM-4AIAqAMByAPLBKoEqgJP0ALNYkBBeT0w4MKxhsr06NOloMQN6k4_fOWBDSr-5Dq_ctUuZR9zOOaYMMfwSrALDMQyLV4jCNas8qqAcLenYS60eKboxxTV7b-6V_9K6D6taVx9sgKVdOSV7McO6eip7tXnbriIT0yfwSf9CYrXU9jltrOqDLEDWrjll--qFOI2-b2-bJZ96zUXIBikXH879nJs9p9g3Bl6wLLb-sFvRsI-7oofddwrCAoZy2-iztvqlpqCKfTFsRf17ZfFJk6Wis-N-05hhxETKrQVzV0BTiWocODtjPBohfgWGQ7oSxPMGNIs1LDggrH8Md8hRjdB9WHCr6ez1wKJBKeo6UD3dukUdD4DJmEN81ScFojjIUVgdd2d1t3rVys8WbbggUi_M4zymOpyBwsKwAS7y_yQtAXgBAGIBf6KpeNVoAYugAf-qoOXAagHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgHyqmxAqgH66WxAqgH6rGxAqgHmbWxAqgHvrexAqgH-MKxAqgH-8KxAtgHANIILwiAYRABGJ0BMgiKgoCAgICACDoNgECAwICAgICogAKoA0i9_cE6WIfb8fuHoZID8ggbYWR4LXN1YnN5bi0zNTIwNjE3MzQxNjY1NTkysQksWUsrVR0hEoAKA5gLAcgLAYAMAdoMEAoKEMDn2NH9kaXENxICAQOqDQJJTsgNAeINEwiIk_L7h6GSAxXFnKwCHT1TLaXqDRMI3-_y-4ehkgMVxZysAh09Uy2l8A0CiA7___________8BuBPkA9gTDNAVAcoWAgoA-BYBgBcBshcOGAEqCjYxNjg1NzY1MDW6FwI4AaoYFwkAAAAAjqUnQRIKNjE2ODU3NjUwNRgBshgJEgKkZhguIgEA0BgB6BgBwhkCCAE&ae=1&ase=2&gclid=EAIaIQobChMIsaPz-4ehkgMVxZysAh09Uy2lEAEYASAAEgJMi_D_BwE&num=1&cid=CAQSswEA56J1ebLjWd5f_wD-toDwKEo-_qZNr6r3Kvf0Gdxs53cSqGyaIiZypBFppiq5hzhrFDHxmljCLE3oHMgzIotq1kprVb6X9G_YmA79Lk8VEtmcC02QfbPOC_DScynfYJi2rsIJZGkbo33Mah0TbQPVqUByo04j3AzfPIMdV4r0S8U8I4DT8MK6f90JkPdMT88yiCjpbhI-0B5tmRyWKAeIywOveBuIoB-Vsx7PuxzgGOdatBgB&sig=AOD64_1k5VaIdLkxCNLJcIfFbvzQisH27w&client=ca-pub-4573231550355221&rf=1&nb=19&adurl=https://sonarsource.com/sem/vibe-then-verify/%3Fs_campaign%3DTOFU_APJ_IN-Brand-EngagedVisitors%26s_content%3DPMax-VibeThenVerify%26s_term%3D%26s_category%3DPaid%26s_source%3DPaid%2520Cross%2520Network%26s_origin%3DGoogle%26cq_src%3Dgoogle_ads%26cq_cmp%3D23021164277%26cq_con%3D%26cq_term%3D%26cq_med%3D%26cq_plac%3D%26cq_net%3Dx%26cq_pos%3D%26cq_plt%3Dgp%26gad_source%3D5%26gad_campaignid%3D23025239422%26gclid%3DEAIaIQobChMIsaPz-4ehkgMVxZysAh09Uy2lEAEYASAAEgJMi_D_BwE
+            - img [ref=f6e10]
+          - link "Vibe, Then Verify" [ref=f6e13] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/aclk?nis=4&sa=l&ai=CTStX8xhzafHdK8W5ssUPvaa1qQr59ofthAGlp8G24hSf_96kiCoQASDG-9Z5YOXK5YO0DqAB6tT86ALIAQmpAlFsqcAvtbM-4AIAqAMByAPLBKoEqgJP0ALNYkBBeT0w4MKxhsr06NOloMQN6k4_fOWBDSr-5Dq_ctUuZR9zOOaYMMfwSrALDMQyLV4jCNas8qqAcLenYS60eKboxxTV7b-6V_9K6D6taVx9sgKVdOSV7McO6eip7tXnbriIT0yfwSf9CYrXU9jltrOqDLEDWrjll--qFOI2-b2-bJZ96zUXIBikXH879nJs9p9g3Bl6wLLb-sFvRsI-7oofddwrCAoZy2-iztvqlpqCKfTFsRf17ZfFJk6Wis-N-05hhxETKrQVzV0BTiWocODtjPBohfgWGQ7oSxPMGNIs1LDggrH8Md8hRjdB9WHCr6ez1wKJBKeo6UD3dukUdD4DJmEN81ScFojjIUVgdd2d1t3rVys8WbbggUi_M4zymOpyBwsKwAS7y_yQtAXgBAGIBf6KpeNVoAYugAf-qoOXAagHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgHyqmxAqgH66WxAqgH6rGxAqgHmbWxAqgHvrexAqgH-MKxAqgH-8KxAtgHANIILwiAYRABGJ0BMgiKgoCAgICACDoNgECAwICAgICogAKoA0i9_cE6WIfb8fuHoZID8ggbYWR4LXN1YnN5bi0zNTIwNjE3MzQxNjY1NTkysQksWUsrVR0hEoAKA5gLAcgLAYAMAdoMEAoKEMDn2NH9kaXENxICAQOqDQJJTsgNAeINEwiIk_L7h6GSAxXFnKwCHT1TLaXqDRMI3-_y-4ehkgMVxZysAh09Uy2l8A0CiA7___________8BuBPkA9gTDNAVAcoWAgoA-BYBgBcBshcOGAEqCjYxNjg1NzY1MDW6FwI4AaoYFwkAAAAAjqUnQRIKNjE2ODU3NjUwNRgBshgJEgKkZhguIgEA0BgB6BgBwhkCCAE&ae=1&ase=2&gclid=EAIaIQobChMIsaPz-4ehkgMVxZysAh09Uy2lEAEYASAAEgJMi_D_BwE&num=1&cid=CAQSswEA56J1ebLjWd5f_wD-toDwKEo-_qZNr6r3Kvf0Gdxs53cSqGyaIiZypBFppiq5hzhrFDHxmljCLE3oHMgzIotq1kprVb6X9G_YmA79Lk8VEtmcC02QfbPOC_DScynfYJi2rsIJZGkbo33Mah0TbQPVqUByo04j3AzfPIMdV4r0S8U8I4DT8MK6f90JkPdMT88yiCjpbhI-0B5tmRyWKAeIywOveBuIoB-Vsx7PuxzgGOdatBgB&sig=AOD64_1k5VaIdLkxCNLJcIfFbvzQisH27w&client=ca-pub-4573231550355221&rf=1&nb=0&adurl=https://sonarsource.com/sem/vibe-then-verify/%3Fs_campaign%3DTOFU_APJ_IN-Brand-EngagedVisitors%26s_content%3DPMax-VibeThenVerify%26s_term%3D%26s_category%3DPaid%26s_source%3DPaid%2520Cross%2520Network%26s_origin%3DGoogle%26cq_src%3Dgoogle_ads%26cq_cmp%3D23021164277%26cq_con%3D%26cq_term%3D%26cq_med%3D%26cq_plac%3D%26cq_net%3Dx%26cq_pos%3D%26cq_plt%3Dgp%26gad_source%3D5%26gad_campaignid%3D23025239422%26gclid%3DEAIaIQobChMIsaPz-4ehkgMVxZysAh09Uy2lEAEYASAAEgJMi_D_BwE
+          - link "Learn More" [ref=f6e16] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/aclk?nis=4&sa=l&ai=CTStX8xhzafHdK8W5ssUPvaa1qQr59ofthAGlp8G24hSf_96kiCoQASDG-9Z5YOXK5YO0DqAB6tT86ALIAQmpAlFsqcAvtbM-4AIAqAMByAPLBKoEqgJP0ALNYkBBeT0w4MKxhsr06NOloMQN6k4_fOWBDSr-5Dq_ctUuZR9zOOaYMMfwSrALDMQyLV4jCNas8qqAcLenYS60eKboxxTV7b-6V_9K6D6taVx9sgKVdOSV7McO6eip7tXnbriIT0yfwSf9CYrXU9jltrOqDLEDWrjll--qFOI2-b2-bJZ96zUXIBikXH879nJs9p9g3Bl6wLLb-sFvRsI-7oofddwrCAoZy2-iztvqlpqCKfTFsRf17ZfFJk6Wis-N-05hhxETKrQVzV0BTiWocODtjPBohfgWGQ7oSxPMGNIs1LDggrH8Md8hRjdB9WHCr6ez1wKJBKeo6UD3dukUdD4DJmEN81ScFojjIUVgdd2d1t3rVys8WbbggUi_M4zymOpyBwsKwAS7y_yQtAXgBAGIBf6KpeNVoAYugAf-qoOXAagHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgHyqmxAqgH66WxAqgH6rGxAqgHmbWxAqgHvrexAqgH-MKxAqgH-8KxAtgHANIILwiAYRABGJ0BMgiKgoCAgICACDoNgECAwICAgICogAKoA0i9_cE6WIfb8fuHoZID8ggbYWR4LXN1YnN5bi0zNTIwNjE3MzQxNjY1NTkysQksWUsrVR0hEoAKA5gLAcgLAYAMAdoMEAoKEMDn2NH9kaXENxICAQOqDQJJTsgNAeINEwiIk_L7h6GSAxXFnKwCHT1TLaXqDRMI3-_y-4ehkgMVxZysAh09Uy2l8A0CiA7___________8BuBPkA9gTDNAVAcoWAgoA-BYBgBcBshcOGAEqCjYxNjg1NzY1MDW6FwI4AaoYFwkAAAAAjqUnQRIKNjE2ODU3NjUwNRgBshgJEgKkZhguIgEA0BgB6BgBwhkCCAE&ae=1&ase=2&gclid=EAIaIQobChMIsaPz-4ehkgMVxZysAh09Uy2lEAEYASAAEgJMi_D_BwE&num=1&cid=CAQSswEA56J1ebLjWd5f_wD-toDwKEo-_qZNr6r3Kvf0Gdxs53cSqGyaIiZypBFppiq5hzhrFDHxmljCLE3oHMgzIotq1kprVb6X9G_YmA79Lk8VEtmcC02QfbPOC_DScynfYJi2rsIJZGkbo33Mah0TbQPVqUByo04j3AzfPIMdV4r0S8U8I4DT8MK6f90JkPdMT88yiCjpbhI-0B5tmRyWKAeIywOveBuIoB-Vsx7PuxzgGOdatBgB&sig=AOD64_1k5VaIdLkxCNLJcIfFbvzQisH27w&client=ca-pub-4573231550355221&rf=1&nb=8&adurl=https://sonarsource.com/sem/vibe-then-verify/%3Fs_campaign%3DTOFU_APJ_IN-Brand-EngagedVisitors%26s_content%3DPMax-VibeThenVerify%26s_term%3D%26s_category%3DPaid%26s_source%3DPaid%2520Cross%2520Network%26s_origin%3DGoogle%26cq_src%3Dgoogle_ads%26cq_cmp%3D23021164277%26cq_con%3D%26cq_term%3D%26cq_med%3D%26cq_plac%3D%26cq_net%3Dx%26cq_pos%3D%26cq_plt%3Dgp%26gad_source%3D5%26gad_campaignid%3D23025239422%26gclid%3DEAIaIQobChMIsaPz-4ehkgMVxZysAh09Uy2lEAEYASAAEgJMi_D_BwE
+            - generic [ref=f6e18]: Learn More
+        - img [ref=f6e23] [cursor=pointer]
+        - button [ref=f6e25] [cursor=pointer]:
+          - img [ref=f6e26]
+        - iframe
+  - generic [ref=e10]:
+    - banner [ref=e11]:
+      - link [ref=e12] [cursor=pointer]:
+        - /url: https://demoqa.com
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - generic [ref=e19]:
+        - generic [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]:
+            - img [ref=e25]
+            - text: Elements
+          - img [ref=e30]
+        - generic [ref=e34]:
+          - generic [ref=e36] [cursor=pointer]:
+            - generic [ref=e37]:
+              - img [ref=e39]
+              - text: Forms
+            - img [ref=e45]
+          - list [ref=e50]:
+            - listitem [ref=e51] [cursor=pointer]:
+              - img [ref=e52]
+              - generic [ref=e54]: Practice Form
+        - generic [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]:
+            - img [ref=e60]
+            - text: Alerts, Frame & Windows
+          - img [ref=e65]
+        - generic [ref=e71] [cursor=pointer]:
+          - generic [ref=e72]:
+            - img [ref=e74]
+            - text: Widgets
+          - img [ref=e79]
+        - generic [ref=e85] [cursor=pointer]:
+          - generic [ref=e86]:
+            - img [ref=e88]
+            - text: Interactions
+          - img [ref=e93]
+        - generic [ref=e99] [cursor=pointer]:
+          - generic [ref=e100]:
+            - img [ref=e102]
+            - text: Book Store Application
+          - img [ref=e107]
+      - generic [ref=e111]:
+        - iframe [ref=e114]:
+          
+        - generic [ref=e115]:
+          - heading "Practice Form" [level=1] [ref=e116]
+          - heading "Student Registration Form" [level=5] [ref=e117]
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - generic [ref=e121]: Name
+              - textbox "First Name" [ref=e123]: Alice
+              - textbox "Last Name" [ref=e126]: Wonderland
+            - generic [ref=e127]:
+              - generic [ref=e129]: Email
+              - textbox "name@example.com" [ref=e131]: alice@example.com
+            - generic [ref=e132]:
+              - generic [ref=e133]: Gender
+              - generic [ref=e134]:
+                - generic [ref=e135]:
+                  - radio "Male" [ref=e136]
+                  - generic [ref=e137]: Male
+                - generic [ref=e138]:
+                  - radio "Female" [checked] [ref=e139]
+                  - generic [ref=e140]: Female
+                - generic [ref=e141]:
+                  - radio "Other" [ref=e142]
+                  - generic [ref=e143]: Other
+            - generic [ref=e144]:
+              - generic [ref=e146]: Mobile(10 Digits)
+              - textbox "Mobile Number" [ref=e148]: "1234567890"
+            - generic [ref=e149]:
+              - generic [ref=e151]: Date of Birth
+              - generic [ref=e152]:
+                - textbox [active] [ref=e155]: 23 Jan 2026
+                - generic [ref=e158]:
+                  - button "Previous Month" [ref=e160] [cursor=pointer]
+                  - button "Next Month" [ref=e161] [cursor=pointer]
+                  - generic [ref=e162]:
+                    - generic [ref=e163]:
+                      - generic [ref=e164]: January 2000
+                      - generic [ref=e165]:
+                        - combobox [ref=e167]:
+                          - option "January" [selected]
+                          - option "February"
+                          - option "March"
+                          - option "April"
+                          - option "May"
+                          - option "June"
+                          - option "July"
+                          - option "August"
+                          - option "September"
+                          - option "October"
+                          - option "November"
+                          - option "December"
+                        - combobox [ref=e169]:
+                          - option "1900"
+                          - option "1901"
+                          - option "1902"
+                          - option "1903"
+                          - option "1904"
+                          - option "1905"
+                          - option "1906"
+                          - option "1907"
+                          - option "1908"
+                          - option "1909"
+                          - option "1910"
+                          - option "1911"
+                          - option "1912"
+                          - option "1913"
+                          - option "1914"
+                          - option "1915"
+                          - option "1916"
+                          - option "1917"
+                          - option "1918"
+                          - option "1919"
+                          - option "1920"
+                          - option "1921"
+                          - option "1922"
+                          - option "1923"
+                          - option "1924"
+                          - option "1925"
+                          - option "1926"
+                          - option "1927"
+                          - option "1928"
+                          - option "1929"
+                          - option "1930"
+                          - option "1931"
+                          - option "1932"
+                          - option "1933"
+                          - option "1934"
+                          - option "1935"
+                          - option "1936"
+                          - option "1937"
+                          - option "1938"
+                          - option "1939"
+                          - option "1940"
+                          - option "1941"
+                          - option "1942"
+                          - option "1943"
+                          - option "1944"
+                          - option "1945"
+                          - option "1946"
+                          - option "1947"
+                          - option "1948"
+                          - option "1949"
+                          - option "1950"
+                          - option "1951"
+                          - option "1952"
+                          - option "1953"
+                          - option "1954"
+                          - option "1955"
+                          - option "1956"
+                          - option "1957"
+                          - option "1958"
+                          - option "1959"
+                          - option "1960"
+                          - option "1961"
+                          - option "1962"
+                          - option "1963"
+                          - option "1964"
+                          - option "1965"
+                          - option "1966"
+                          - option "1967"
+                          - option "1968"
+                          - option "1969"
+                          - option "1970"
+                          - option "1971"
+                          - option "1972"
+                          - option "1973"
+                          - option "1974"
+                          - option "1975"
+                          - option "1976"
+                          - option "1977"
+                          - option "1978"
+                          - option "1979"
+                          - option "1980"
+                          - option "1981"
+                          - option "1982"
+                          - option "1983"
+                          - option "1984"
+                          - option "1985"
+                          - option "1986"
+                          - option "1987"
+                          - option "1988"
+                          - option "1989"
+                          - option "1990"
+                          - option "1991"
+                          - option "1992"
+                          - option "1993"
+                          - option "1994"
+                          - option "1995"
+                          - option "1996"
+                          - option "1997"
+                          - option "1998"
+                          - option "1999"
+                          - option "2000" [selected]
+                          - option "2001"
+                          - option "2002"
+                          - option "2003"
+                          - option "2004"
+                          - option "2005"
+                          - option "2006"
+                          - option "2007"
+                          - option "2008"
+                          - option "2009"
+                          - option "2010"
+                          - option "2011"
+                          - option "2012"
+                          - option "2013"
+                          - option "2014"
+                          - option "2015"
+                          - option "2016"
+                          - option "2017"
+                          - option "2018"
+                          - option "2019"
+                          - option "2020"
+                          - option "2021"
+                          - option "2022"
+                          - option "2023"
+                          - option "2024"
+                          - option "2025"
+                          - option "2026"
+                          - option "2027"
+                          - option "2028"
+                          - option "2029"
+                          - option "2030"
+                          - option "2031"
+                          - option "2032"
+                          - option "2033"
+                          - option "2034"
+                          - option "2035"
+                          - option "2036"
+                          - option "2037"
+                          - option "2038"
+                          - option "2039"
+                          - option "2040"
+                          - option "2041"
+                          - option "2042"
+                          - option "2043"
+                          - option "2044"
+                          - option "2045"
+                          - option "2046"
+                          - option "2047"
+                          - option "2048"
+                          - option "2049"
+                          - option "2050"
+                          - option "2051"
+                          - option "2052"
+                          - option "2053"
+                          - option "2054"
+                          - option "2055"
+                          - option "2056"
+                          - option "2057"
+                          - option "2058"
+                          - option "2059"
+                          - option "2060"
+                          - option "2061"
+                          - option "2062"
+                          - option "2063"
+                          - option "2064"
+                          - option "2065"
+                          - option "2066"
+                          - option "2067"
+                          - option "2068"
+                          - option "2069"
+                          - option "2070"
+                          - option "2071"
+                          - option "2072"
+                          - option "2073"
+                          - option "2074"
+                          - option "2075"
+                          - option "2076"
+                          - option "2077"
+                          - option "2078"
+                          - option "2079"
+                          - option "2080"
+                          - option "2081"
+                          - option "2082"
+                          - option "2083"
+                          - option "2084"
+                          - option "2085"
+                          - option "2086"
+                          - option "2087"
+                          - option "2088"
+                          - option "2089"
+                          - option "2090"
+                          - option "2091"
+                          - option "2092"
+                          - option "2093"
+                          - option "2094"
+                          - option "2095"
+                          - option "2096"
+                          - option "2097"
+                          - option "2098"
+                          - option "2099"
+                          - option "2100"
+                      - generic [ref=e170]:
+                        - generic [ref=e171]: Su
+                        - generic [ref=e172]: Mo
+                        - generic [ref=e173]: Tu
+                        - generic [ref=e174]: We
+                        - generic [ref=e175]: Th
+                        - generic [ref=e176]: Fr
+                        - generic [ref=e177]: Sa
+                    - listbox "month 2000-01" [ref=e178]:
+                      - generic [ref=e179]:
+                        - option "Choose Sunday, December 26th, 1999" [ref=e180] [cursor=pointer]: "26"
+                        - option "Choose Monday, December 27th, 1999" [ref=e181] [cursor=pointer]: "27"
+                        - option "Choose Tuesday, December 28th, 1999" [ref=e182] [cursor=pointer]: "28"
+                        - option "Choose Wednesday, December 29th, 1999" [ref=e183] [cursor=pointer]: "29"
+                        - option "Choose Thursday, December 30th, 1999" [ref=e184] [cursor=pointer]: "30"
+                        - option "Choose Friday, December 31st, 1999" [ref=e185] [cursor=pointer]: "31"
+                        - option "Choose Saturday, January 1st, 2000" [ref=e186] [cursor=pointer]: "1"
+                      - generic [ref=e187]:
+                        - option "Choose Sunday, January 2nd, 2000" [ref=e188] [cursor=pointer]: "2"
+                        - option "Choose Monday, January 3rd, 2000" [ref=e189] [cursor=pointer]: "3"
+                        - option "Choose Tuesday, January 4th, 2000" [ref=e190] [cursor=pointer]: "4"
+                        - option "Choose Wednesday, January 5th, 2000" [ref=e191] [cursor=pointer]: "5"
+                        - option "Choose Thursday, January 6th, 2000" [ref=e192] [cursor=pointer]: "6"
+                        - option "Choose Friday, January 7th, 2000" [ref=e193] [cursor=pointer]: "7"
+                        - option "Choose Saturday, January 8th, 2000" [ref=e194] [cursor=pointer]: "8"
+                      - generic [ref=e195]:
+                        - option "Choose Sunday, January 9th, 2000" [ref=e196] [cursor=pointer]: "9"
+                        - option "Choose Monday, January 10th, 2000" [ref=e197] [cursor=pointer]: "10"
+                        - option "Choose Tuesday, January 11th, 2000" [ref=e198] [cursor=pointer]: "11"
+                        - option "Choose Wednesday, January 12th, 2000" [ref=e199] [cursor=pointer]: "12"
+                        - option "Choose Thursday, January 13th, 2000" [ref=e200] [cursor=pointer]: "13"
+                        - option "Choose Friday, January 14th, 2000" [ref=e201] [cursor=pointer]: "14"
+                        - option "Choose Saturday, January 15th, 2000" [ref=e202] [cursor=pointer]: "15"
+                      - generic [ref=e203]:
+                        - option "Choose Sunday, January 16th, 2000" [ref=e204] [cursor=pointer]: "16"
+                        - option "Choose Monday, January 17th, 2000" [ref=e205] [cursor=pointer]: "17"
+                        - option "Choose Tuesday, January 18th, 2000" [ref=e206] [cursor=pointer]: "18"
+                        - option "Choose Wednesday, January 19th, 2000" [ref=e207] [cursor=pointer]: "19"
+                        - option "Choose Thursday, January 20th, 2000" [ref=e208] [cursor=pointer]: "20"
+                        - option "Choose Friday, January 21st, 2000" [ref=e209] [cursor=pointer]: "21"
+                        - option "Choose Saturday, January 22nd, 2000" [ref=e210] [cursor=pointer]: "22"
+                      - generic [ref=e211]:
+                        - option "Choose Sunday, January 23rd, 2000" [ref=e212] [cursor=pointer]: "23"
+                        - option "Choose Monday, January 24th, 2000" [ref=e213] [cursor=pointer]: "24"
+                        - option "Choose Tuesday, January 25th, 2000" [ref=e214] [cursor=pointer]: "25"
+                        - option "Choose Wednesday, January 26th, 2000" [ref=e215] [cursor=pointer]: "26"
+                        - option "Choose Thursday, January 27th, 2000" [ref=e216] [cursor=pointer]: "27"
+                        - option "Choose Friday, January 28th, 2000" [ref=e217] [cursor=pointer]: "28"
+                        - option "Choose Saturday, January 29th, 2000" [ref=e218] [cursor=pointer]: "29"
+                      - generic [ref=e219]:
+                        - option "Choose Sunday, January 30th, 2000" [ref=e220] [cursor=pointer]: "30"
+                        - option "Choose Monday, January 31st, 2000" [ref=e221] [cursor=pointer]: "31"
+                        - option "Choose Tuesday, February 1st, 2000" [ref=e222] [cursor=pointer]: "1"
+                        - option "Choose Wednesday, February 2nd, 2000" [ref=e223] [cursor=pointer]: "2"
+                        - option "Choose Thursday, February 3rd, 2000" [ref=e224] [cursor=pointer]: "3"
+                        - option "Choose Friday, February 4th, 2000" [ref=e225] [cursor=pointer]: "4"
+                        - option "Choose Saturday, February 5th, 2000" [ref=e226] [cursor=pointer]: "5"
+                      - generic [ref=e227]:
+                        - option "Choose Sunday, February 6th, 2000" [ref=e228] [cursor=pointer]: "6"
+                        - option "Choose Monday, February 7th, 2000" [ref=e229] [cursor=pointer]: "7"
+                        - option "Choose Tuesday, February 8th, 2000" [ref=e230] [cursor=pointer]: "8"
+                        - option "Choose Wednesday, February 9th, 2000" [ref=e231] [cursor=pointer]: "9"
+                        - option "Choose Thursday, February 10th, 2000" [ref=e232] [cursor=pointer]: "10"
+                        - option "Choose Friday, February 11th, 2000" [ref=e233] [cursor=pointer]: "11"
+                        - option "Choose Saturday, February 12th, 2000" [ref=e234] [cursor=pointer]: "12"
+            - generic [ref=e235]:
+              - generic [ref=e237]: Subjects
+              - textbox [ref=e244]
+            - generic [ref=e247]:
+              - generic [ref=e249]: Hobbies
+              - generic [ref=e250]:
+                - generic [ref=e251]:
+                  - checkbox "Sports" [ref=e252]
+                  - generic [ref=e253]: Sports
+                - generic [ref=e254]:
+                  - checkbox "Reading" [ref=e255]
+                  - generic [ref=e256]: Reading
+                - generic [ref=e257]:
+                  - checkbox "Music" [ref=e258]
+                  - generic [ref=e259]: Music
+            - generic [ref=e260]:
+              - generic [ref=e262]: Picture
+              - generic [ref=e264]:
+                - generic [ref=e265]: Select picture
+                - button "Select picture" [ref=e266]
+            - generic [ref=e267]:
+              - generic [ref=e269]: Current Address
+              - textbox "Current Address" [ref=e271]
+            - generic [ref=e272]:
+              - generic [ref=e274]: State and City
+              - generic [ref=e277]:
+                - generic [ref=e278]:
+                  - generic [ref=e279]: Select State
+                  - textbox [ref=e282]
+                - img [ref=e286]
+              - generic [ref=e288]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Select City
+                      - generic:
+                        - generic:
+                          - textbox [disabled]
+                    - generic:
+                      - generic:
+                        - img
+            - button "Submit" [ref=e291] [cursor=pointer]
+        - iframe [ref=e295]:
+          - generic [ref=f12e8] [cursor=pointer]:
+            - link [ref=f12e10]:
+              - /url: https://clck.mgid.com/ghits/25945471/i/58092122/0/pp/1/8?h=W-Yti3Ic7RpvfzABeTFj2TE0HFBirdw9WNwi5_OvsCCvlelV1EfEtNrY73v5D0pMLre59wELMae-_uJXKVURnpWz0s-3cYFeZ50xy-HBhkZ_OtWmfutV5usc4PRNv7jB&rid=103315ee-f827-11f0-aa81-c4cbe1e8d87e&ts=demoqa.com&tt=Referral&att=4&abd=1&iv=17&ct=1&gdprApplies=0&muid=q0maEGMm4bJm&st=330&mp4=1&h2=aUJj-9w606ptNt-q5Um5TINLSG4UbKMGxZxPQBEUpqa1rzEWQZezd-64DXb6fFOmAowaLWE6deGDw_jmVIo0Zw**
+            - generic [ref=f12e13]:
+              - link "PINC" [ref=f12e15]:
+                - /url: https://clck.mgid.com/ghits/25945471/i/58092122/0/pp/1/8?h=W-Yti3Ic7RpvfzABeTFj2TE0HFBirdw9WNwi5_OvsCCvlelV1EfEtNrY73v5D0pMLre59wELMae-_uJXKVURnpWz0s-3cYFeZ50xy-HBhkZ_OtWmfutV5usc4PRNv7jB&rid=103315ee-f827-11f0-aa81-c4cbe1e8d87e&ts=demoqa.com&tt=Referral&att=4&abd=1&iv=17&ct=1&gdprApplies=0&muid=q0maEGMm4bJm&st=330&mp4=1&h2=aUJj-9w606ptNt-q5Um5TINLSG4UbKMGxZxPQBEUpqa1rzEWQZezd-64DXb6fFOmAowaLWE6deGDw_jmVIo0Zw**
+              - link "28-year-old Millionaire From Bengaluru Tells How She Became Rich" [ref=f12e17]:
+                - /url: https://clck.mgid.com/ghits/25945471/i/58092122/0/pp/1/8?h=W-Yti3Ic7RpvfzABeTFj2TE0HFBirdw9WNwi5_OvsCCvlelV1EfEtNrY73v5D0pMLre59wELMae-_uJXKVURnpWz0s-3cYFeZ50xy-HBhkZ_OtWmfutV5usc4PRNv7jB&rid=103315ee-f827-11f0-aa81-c4cbe1e8d87e&ts=demoqa.com&tt=Referral&att=4&abd=1&iv=17&ct=1&gdprApplies=0&muid=q0maEGMm4bJm&st=330&mp4=1&h2=aUJj-9w606ptNt-q5Um5TINLSG4UbKMGxZxPQBEUpqa1rzEWQZezd-64DXb6fFOmAowaLWE6deGDw_jmVIo0Zw**
+              - link "Learn more→" [ref=f12e19]:
+                - /url: https://clck.mgid.com/ghits/25945471/i/58092122/0/pp/1/8?h=W-Yti3Ic7RpvfzABeTFj2TE0HFBirdw9WNwi5_OvsCCvlelV1EfEtNrY73v5D0pMLre59wELMae-_uJXKVURnpWz0s-3cYFeZ50xy-HBhkZ_OtWmfutV5usc4PRNv7jB&rid=103315ee-f827-11f0-aa81-c4cbe1e8d87e&ts=demoqa.com&tt=Referral&att=4&abd=1&iv=17&ct=1&gdprApplies=0&muid=q0maEGMm4bJm&st=330&mp4=1&h2=aUJj-9w606ptNt-q5Um5TINLSG4UbKMGxZxPQBEUpqa1rzEWQZezd-64DXb6fFOmAowaLWE6deGDw_jmVIo0Zw**
+      - generic [ref=e300]:
+        - img "Build PlayWright tests with AI" [ref=e302] [cursor=pointer]
+        - iframe [ref=e305]:
+          - generic [ref=f10e7] [cursor=pointer]:
+            - link [ref=f10e8]:
+              - /url: https://clck.mgid.com/ghits/25945471/i/58092113/0/pp/1/8?h=W-Yti3Ic7RpvfzABeTFj2dO_XAKCNIARIfxVqC0sl6PAauKp4zBOe71xpScchhEuLre59wELMae-_uJXKVURnpWz0s-3cYFeZ50xy-HBhkZZJp-WNW7iDtom4vwBUvX0&rid=10312dc9-f827-11f0-aa81-c4cbe1e8d87e&ts=demoqa.com&tt=Referral&att=4&abd=1&iv=17&ct=1&gdprApplies=0&muid=q0maCmL6oRJm&st=330&mp4=1&h2=aUJj-9w606ptNt-q5Um5TDotcHMnYqNGVwm8XjpUrIQCxQVIyhFlf97PBeF6OmlMZM3Kv3nfRmfNivqTapxbsw**
+            - generic [ref=f10e9]:
+              - link [ref=f10e11]:
+                - /url: https://clck.mgid.com/ghits/25945471/i/58092113/0/pp/1/8?h=W-Yti3Ic7RpvfzABeTFj2dO_XAKCNIARIfxVqC0sl6PAauKp4zBOe71xpScchhEuLre59wELMae-_uJXKVURnpWz0s-3cYFeZ50xy-HBhkZZJp-WNW7iDtom4vwBUvX0&rid=10312dc9-f827-11f0-aa81-c4cbe1e8d87e&ts=demoqa.com&tt=Referral&att=4&abd=1&iv=17&ct=1&gdprApplies=0&muid=q0maCmL6oRJm&st=330&mp4=1&h2=aUJj-9w606ptNt-q5Um5TDotcHMnYqNGVwm8XjpUrIQCxQVIyhFlf97PBeF6OmlMZM3Kv3nfRmfNivqTapxbsw**
+              - generic [ref=f10e14]:
+                - link "28-year-old Millionaire From Bengaluru Tells How She Became Rich" [ref=f10e16]:
+                  - /url: https://clck.mgid.com/ghits/25945471/i/58092113/0/pp/1/8?h=W-Yti3Ic7RpvfzABeTFj2dO_XAKCNIARIfxVqC0sl6PAauKp4zBOe71xpScchhEuLre59wELMae-_uJXKVURnpWz0s-3cYFeZ50xy-HBhkZZJp-WNW7iDtom4vwBUvX0&rid=10312dc9-f827-11f0-aa81-c4cbe1e8d87e&ts=demoqa.com&tt=Referral&att=4&abd=1&iv=17&ct=1&gdprApplies=0&muid=q0maCmL6oRJm&st=330&mp4=1&h2=aUJj-9w606ptNt-q5Um5TDotcHMnYqNGVwm8XjpUrIQCxQVIyhFlf97PBeF6OmlMZM3Kv3nfRmfNivqTapxbsw**
+                - link "PINC" [ref=f10e18]:
+                  - /url: https://clck.mgid.com/ghits/25945471/i/58092113/0/pp/1/8?h=W-Yti3Ic7RpvfzABeTFj2dO_XAKCNIARIfxVqC0sl6PAauKp4zBOe71xpScchhEuLre59wELMae-_uJXKVURnpWz0s-3cYFeZ50xy-HBhkZZJp-WNW7iDtom4vwBUvX0&rid=10312dc9-f827-11f0-aa81-c4cbe1e8d87e&ts=demoqa.com&tt=Referral&att=4&abd=1&iv=17&ct=1&gdprApplies=0&muid=q0maCmL6oRJm&st=330&mp4=1&h2=aUJj-9w606ptNt-q5Um5TDotcHMnYqNGVwm8XjpUrIQCxQVIyhFlf97PBeF6OmlMZM3Kv3nfRmfNivqTapxbsw**
+                - link [ref=f10e19]:
+                  - /url: https://clck.mgid.com/ghits/25945471/i/58092113/0/pp/1/8?h=W-Yti3Ic7RpvfzABeTFj2dO_XAKCNIARIfxVqC0sl6PAauKp4zBOe71xpScchhEuLre59wELMae-_uJXKVURnpWz0s-3cYFeZ50xy-HBhkZZJp-WNW7iDtom4vwBUvX0&rid=10312dc9-f827-11f0-aa81-c4cbe1e8d87e&ts=demoqa.com&tt=Referral&att=4&abd=1&iv=17&ct=1&gdprApplies=0&muid=q0maCmL6oRJm&st=330&mp4=1&h2=aUJj-9w606ptNt-q5Um5TDotcHMnYqNGVwm8XjpUrIQCxQVIyhFlf97PBeF6OmlMZM3Kv3nfRmfNivqTapxbsw**
+                  - img [ref=f10e20]
+    - contentinfo [ref=e306]:
+      - generic [ref=e307]: © 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```

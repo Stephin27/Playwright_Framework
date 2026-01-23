@@ -1,0 +1,53 @@
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests\forms\practiceForm.spec.ts:32:9 › Data-Driven Practice Form Tests › Submit Form with Excel Data
+[1A[2K  1) [chromium] › tests\forms\practiceForm.spec.ts:32:9 › Data-Driven Practice Form Tests › Submit Form with Excel Data › Submitting form for Alice Wonderland 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: locator.selectOption: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('.react-datepicker__month-select')[22m
+    [2m    - locator resolved to <select class="react-datepicker__month-select">…</select>[22m
+    [2m  - attempting select option action[22m
+    [2m    2 × waiting for element to be visible and enabled[22m
+    [2m      - did not find some options[22m
+    [2m    - retrying select option action[22m
+    [2m    - waiting 20ms[22m
+    [2m    2 × waiting for element to be visible and enabled[22m
+    [2m      - did not find some options[22m
+    [2m    - retrying select option action[22m
+    [2m      - waiting 100ms[22m
+    [2m    47 × waiting for element to be visible and enabled[22m
+    [2m       - did not find some options[22m
+    [2m     - retrying select option action[22m
+    [2m       - waiting 500ms[22m
+
+
+       at ..\pages\PracticeFormPage.ts:90
+
+      88 |
+      89 |             await this.dateYearSelect.selectOption(year);
+    > 90 |             await this.dateMonthSelect.selectOption(month);
+         |                                        ^
+      91 |             // Select day, avoid outside month
+      92 |             await this.page.locator(`.react-datepicker__day:not(.react-datepicker__day--outside-month)`).getByText(day, { exact: true }).first().click();
+      93 |         }
+        at PracticeFormPage.fillForm (D:\Playwright_Framework\pages\PracticeFormPage.ts:90:40)
+        at D:\Playwright_Framework\tests\forms\practiceForm.spec.ts:35:17
+        at D:\Playwright_Framework\tests\forms\practiceForm.spec.ts:34:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\forms-practiceForm-Data-Dr-12bd0-Submit-Form-with-Excel-Data-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\forms-practiceForm-Data-Dr-12bd0-Submit-Form-with-Excel-Data-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\forms-practiceForm-Data-Dr-12bd0-Submit-Form-with-Excel-Data-chromium\error-context.md
+
+
+[1A[2K  1 failed
+    [chromium] › tests\forms\practiceForm.spec.ts:32:9 › Data-Driven Practice Form Tests › Submit Form with Excel Data 

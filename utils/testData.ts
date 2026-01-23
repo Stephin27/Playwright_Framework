@@ -2,6 +2,7 @@ export const TestData = {
     URL: 'https://demoqa.com/elements',
     ALERTS_URL: 'https://demoqa.com/alerts',
     WIDGETS_URL: 'https://demoqa.com/widgets',
+    PRACTICE_FORM_URL: 'https://demoqa.com/automation-practice-form',
     TEXT_BOX: {
         FULL_NAME: 'John Doe',
         EMAIL: 'john.doe@example.com',
