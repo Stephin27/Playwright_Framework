@@ -1,0 +1,3 @@
+{
+    "playwright.nodePath": "./node_modules/.bin/node"
+}

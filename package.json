@@ -6,7 +6,7 @@
   "scripts": {
     "test": "playwright test && npm run report:single || npm run report:single",
     "report": "allure generate allure-results -o allure-report --clean && allure open allure-report",
-    "report:single": "allure generate allure-results -o allure-report --clean && allure-combine allure-report"
+    "report:single": "allure generate allure-results --single-file -o allure-report --clean && mv allure-report/index.html allure-report/complete.html"
   },
   "keywords": [
     "playwright",
@@ -18,14 +18,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.40.0",
+    "@playwright/test": "^1.49.1",
     "@types/node": "^20.10.0",
     "allure-commandline": "^2.25.0",
     "allure-playwright": "^2.10.0",
-    "playwright": "^1.40.0",
+    "playwright": "^1.49.1",
     "typescript": "^5.3.0"
   },
   "dependencies": {
     "exceljs": "^4.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

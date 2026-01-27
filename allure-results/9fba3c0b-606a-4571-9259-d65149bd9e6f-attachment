@@ -1,0 +1,115 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - img "adplus-dvertising" [ref=e6] [cursor=pointer]
+    - iframe [ref=e9]:
+      - generic [ref=f5e2]:
+        - iframe [ref=f5e5]:
+          - generic [ref=f14e4]:
+            - generic:
+              - generic [ref=f14e6]: GenUI intelligent workspaces
+              - generic [ref=f14e8]: Agentic AI collaboration
+              - generic [ref=f14e10]: Purpose-built LLMs
+              - generic [ref=f14e12]: Bleeding-edge AI research
+              - generic [ref=f14e14]: Quantum networks
+              - generic [ref=f14e16]: Open source security for AI
+              - generic [ref=f14e18]: AI networking
+        - generic [ref=f5e6]:
+          - generic:
+            - img [ref=f5e10] [cursor=pointer]
+            - button [ref=f5e12] [cursor=pointer]:
+              - img [ref=f5e13]
+  - generic [ref=e10]:
+    - banner [ref=e11]:
+      - link [ref=e12] [cursor=pointer]:
+        - /url: https://demoqa.com
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - generic [ref=e19]:
+        - generic [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]:
+            - img [ref=e25]
+            - text: Elements
+          - img [ref=e30]
+        - generic [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]:
+            - img [ref=e39]
+            - text: Forms
+          - img [ref=e45]
+        - generic [ref=e49]:
+          - generic [ref=e51] [cursor=pointer]:
+            - generic [ref=e52]:
+              - img [ref=e54]
+              - text: Alerts, Frame & Windows
+            - img [ref=e59]
+          - list [ref=e64]:
+            - listitem [ref=e65] [cursor=pointer]:
+              - img [ref=e66]
+              - generic [ref=e68]: Browser Windows
+            - listitem [ref=e69] [cursor=pointer]:
+              - img [ref=e70]
+              - generic [ref=e72]: Alerts
+            - listitem [ref=e73] [cursor=pointer]:
+              - img [ref=e74]
+              - generic [ref=e76]: Frames
+            - listitem [ref=e77] [cursor=pointer]:
+              - img [ref=e78]
+              - generic [ref=e80]: Nested Frames
+            - listitem [ref=e81] [cursor=pointer]:
+              - img [ref=e82]
+              - generic [ref=e84]: Modal Dialogs
+        - generic [ref=e87] [cursor=pointer]:
+          - generic [ref=e88]:
+            - img [ref=e90]
+            - text: Widgets
+          - img [ref=e95]
+        - generic [ref=e101] [cursor=pointer]:
+          - generic [ref=e102]:
+            - img [ref=e104]
+            - text: Interactions
+          - img [ref=e109]
+        - generic [ref=e115] [cursor=pointer]:
+          - generic [ref=e116]:
+            - img [ref=e118]
+            - text: Book Store Application
+          - img [ref=e123]
+      - generic [ref=e127]:
+        - iframe [ref=e130]:
+          - generic [ref=f8e3]:
+            - button [ref=f8e4]:
+              - img [ref=f8e5]
+            - generic [ref=f8e7]:
+              - generic [ref=f8e9]:
+                - generic [ref=f8e13]:
+                  - button "Play video" [ref=f8e17] [cursor=pointer]:
+                    - img [ref=f8e18]
+                  - button "Unmute video" [ref=f8e23] [cursor=pointer]
+                - button "Replay" [ref=f8e30]:
+                  - img [ref=f8e32] [cursor=pointer]
+                - img [ref=f8e37]
+              - button "Learn more" [ref=f8e44] [cursor=pointer]
+        - generic [ref=e131]:
+          - heading "Alerts" [level=1] [ref=e132]
+          - generic [ref=e133]:
+            - generic [ref=e134]: Click Button to see alert
+            - button "Click me" [ref=e136] [cursor=pointer]
+          - generic [ref=e137]:
+            - generic [ref=e138]: On button click, alert will appear after 5 seconds
+            - button "Click me" [ref=e140] [cursor=pointer]
+          - generic [ref=e141]:
+            - generic [ref=e142]: On button click, confirm box will appear
+            - button "Click me" [ref=e144] [cursor=pointer]
+          - generic [ref=e145]:
+            - generic [ref=e146]: On button click, prompt box will appear
+            - button "Click me" [ref=e148] [cursor=pointer]
+        - iframe [ref=e152]:
+          
+      - generic [ref=e157]:
+        - img "Build PlayWright tests with AI" [ref=e159] [cursor=pointer]
+        - iframe [ref=e162]:
+          
+    - contentinfo [ref=e163]:
+      - generic [ref=e164]: © 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```
