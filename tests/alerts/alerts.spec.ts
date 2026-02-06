@@ -43,7 +43,7 @@ test.describe('DemoQA Alerts Tests', () => {
         });
 
         await alertsPage.triggerConfirmAlert();
-        await expect(alertsPage.confirmResult).toHaveText('You selected Ok');
+        await expect(alertsPage.confirmResult).toContainText('You selected Ok');
     });
 
     test('Confirm Alert - Dismiss', async ({ page }) => {

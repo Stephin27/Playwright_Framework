@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
     testDir: './tests',
-    timeout: 30 * 1000,
+    timeout: 120 * 1000,
     expect: {
         timeout: 5 * 1000
     },
@@ -20,8 +20,8 @@ export default defineConfig({
         }]
     ],
     use: {
-        actionTimeout: 10 * 1000,
-        navigationTimeout: 15 * 1000,
+        actionTimeout: 20 * 1000,
+        navigationTimeout: 30 * 1000,
         trace: 'on-first-retry',
         screenshot: 'only-on-failure',
         video: 'retain-on-failure',

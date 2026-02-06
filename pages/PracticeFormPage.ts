@@ -60,8 +60,20 @@ export class PracticeFormPage {
     }
 
     async navigateTo() {
-        await this.page.goto('https://demoqa.com/automation-practice-form');
-        // Remove ads and footer
+        const maxRetries = 3;
+        for (let i = 0; i < maxRetries; i++) {
+            try {
+                await this.page.goto('https://demoqa.com/automation-practice-form', {
+                    timeout: 60000,
+                    waitUntil: 'domcontentloaded'
+                });
+                break;
+            } catch (error) {
+                if (i === maxRetries - 1) throw error;
+                console.log(`Navigation failed, retrying (${i + 1}/${maxRetries})...`);
+            }
+        }
+        // Remove ads and footer to avoid click interceptions
         await this.page.addStyleTag({ content: '#fixedban { display: none !important; } footer { display: none !important; }' });
     }
 
@@ -101,8 +113,10 @@ export class PracticeFormPage {
             const subjects = data.Subjects.split(',');
             for (const subject of subjects) {
                 await this.subjectsInput.fill(subject.trim());
-                // Wait for option to appear and click it to avoid accidental form submission via Enter
-                await this.page.locator('.subjects-auto-complete__option').first().click();
+                // Wait for option to appear and ensure it's ready to be clicked
+                const option = this.page.locator('.subjects-auto-complete__option').first();
+                await option.waitFor({ state: 'visible' });
+                await option.click();
             }
         }
 

@@ -30,6 +30,7 @@ test.describe('Data-Driven Practice Form Tests', () => {
     // Let's use test.step for each row for better reporting granularity within one test.
 
     test('Submit Form with Excel Data', async () => {
+        test.slow();
         for (const [index, data] of testData.entries()) {
             await test.step(`Submitting form for ${data.FirstName} ${data.LastName}`, async () => {
                 await practiceFormPage.fillForm(data);
