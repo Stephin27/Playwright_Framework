@@ -1,7 +1,7 @@
 import { Page, Locator } from '@playwright/test';
+import { BasePage } from './BasePage';
 
-export class PracticeFormPage {
-    readonly page: Page;
+export class PracticeFormPage extends BasePage {
     readonly firstNameInput: Locator;
     readonly lastNameInput: Locator;
     readonly emailInput: Locator;
@@ -16,22 +16,21 @@ export class PracticeFormPage {
     readonly hobbiesMusicCheckbox: Locator;
     readonly uploadPictureInput: Locator;
     readonly currentAddressInput: Locator;
-    readonly stateSelect: Locator; // Often a div acting as select in React
+    readonly stateSelect: Locator;
     readonly citySelect: Locator;
     readonly submitButton: Locator;
 
-    // Date Picker specific (reusing logic or locators if similar to Widgets, but usually independent)
+    // Date Picker specific locators
     readonly dateMonthSelect: Locator;
     readonly dateYearSelect: Locator;
 
     constructor(page: Page) {
-        this.page = page;
+        super(page);
         this.firstNameInput = page.getByPlaceholder('First Name');
         this.lastNameInput = page.getByPlaceholder('Last Name');
         this.emailInput = page.getByPlaceholder('name@example.com');
 
-        // Gender is tricky, often the input is hidden and label is clicked. 
-        // Using getByText or label association.
+        // Gender selection
         this.maleRadio = page.getByText('Male', { exact: true });
         this.femaleRadio = page.getByText('Female', { exact: true });
         this.otherRadio = page.getByText('Other', { exact: true });
@@ -48,7 +47,7 @@ export class PracticeFormPage {
         this.uploadPictureInput = page.locator('#uploadPicture');
         this.currentAddressInput = page.getByPlaceholder('Current Address');
 
-        // State and City are often React Select components
+        // State and City selectors
         this.stateSelect = page.locator('#state');
         this.citySelect = page.locator('#city');
 
@@ -89,8 +88,7 @@ export class PracticeFormPage {
         await this.mobileInput.fill(data.Mobile);
 
         // Date Logic
-        // Data format assumed: "15 Mar 2000" or similar. 
-        // Simple implementation: 
+        // Date selection logic
         if (data.DateOfBirth) {
             await this.dateOfBirthInput.click();
             const dateParts = data.DateOfBirth.split(' ');
@@ -140,6 +138,6 @@ export class PracticeFormPage {
     }
 
     async submit() {
-        await this.submitButton.click({ force: true });
+        await this.safeClick("Click the Submit button to finalize the form", this.submitButton);
     }
 }

@@ -1,4 +1,12 @@
 import { defineConfig, devices } from '@playwright/test';
+import * as dotenv from 'dotenv';
+import * as path from 'path';
+
+/**
+ * Read environment variables from file.
+ * https://github.com/motdotla/dotenv
+ */
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 export default defineConfig({
     testDir: './tests',
@@ -8,8 +16,8 @@ export default defineConfig({
     },
     fullyParallel: false,
     forbidOnly: !!process.env.CI,
-    retries: process.env.CI ? 2 : 0,
-    workers: 1,
+    retries: process.env.RETRIES ? parseInt(process.env.RETRIES) : (process.env.CI ? 2 : 0),
+    workers: process.env.WORKERS ? parseInt(process.env.WORKERS) : 1,
     reporter: [
         ['line'],
         ['html', { open: 'never' }],
@@ -21,15 +29,15 @@ export default defineConfig({
     ],
     use: {
         actionTimeout: 20 * 1000,
-        navigationTimeout: 30 * 1000,
+        navigationTimeout: 60 * 1000,
         trace: 'on-first-retry',
         screenshot: 'only-on-failure',
         video: 'retain-on-failure',
-        headless: false // Running headed as implied by 'real-world' visually but can be changed
+        headless: process.env.HEADLESS === 'true'
     },
     projects: [
         {
-            name: 'chromium',
+            name: process.env.BROWSER || 'chromium',
             use: { ...devices['Desktop Chrome'] },
         },
         // Uncomment for other browsers
