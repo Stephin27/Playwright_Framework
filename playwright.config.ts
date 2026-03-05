@@ -14,10 +14,10 @@ export default defineConfig({
     expect: {
         timeout: 5 * 1000
     },
-    fullyParallel: false,
+    fullyParallel: true,
     forbidOnly: !!process.env.CI,
     retries: process.env.RETRIES ? parseInt(process.env.RETRIES) : (process.env.CI ? 2 : 0),
-    workers: process.env.WORKERS ? parseInt(process.env.WORKERS) : 1,
+    workers: process.env.WORKERS ? parseInt(process.env.WORKERS) : undefined,
     reporter: [
         ['line'],
         ['html', { open: 'never' }],

@@ -8,6 +8,33 @@ export class BasePage {
     constructor(page: Page) {
         this.page = page;
         this.recovery = new RecoveryManager(page);
+        this.setupAdBlocking();
+    }
+
+    private async setupAdBlocking() {
+        // Block ad-related domains at the network level
+        await this.page.route('**/*', (route) => {
+            const url = route.request().url();
+            const adDomains = [
+                'google-analytics.com',
+                'googletagservices.com',
+                'adservice.google.com',
+                'pagead2.googlesyndication.com',
+                'doubleclick.net',
+                'adnxs.com',
+                'carbonads.net',
+                'fixedban',
+                'adsbygoogle',
+                'amazon-adsystem',
+                'googlesyndication'
+            ];
+
+            if (adDomains.some(domain => url.includes(domain))) {
+                route.abort();
+            } else {
+                route.continue();
+            }
+        });
     }
 
     async safeClick(intent: string, fallbackLocator: Locator) {

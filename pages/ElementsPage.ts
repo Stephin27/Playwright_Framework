@@ -22,7 +22,7 @@ export class ElementsPage {
     // Check Box Locators
     private checkBoxMenu = '//span[text()="Check Box"]';
     private homeCheckbox = 'label[for="tree-node-home"] span.rct-checkbox';
-    public homeCheckboxInput = 'label[for="tree-node-home"] input';
+    public homeCheckboxInput = 'span.rc-tree-checkbox';
     private expandAllButton = 'button[title="Expand all"]';
     public resultDisplay = '#result';
 
@@ -66,12 +66,13 @@ export class ElementsPage {
     // Actions
 
     async navigateToElements() {
-        // Assuming we are at base URL
+        await this.page.locator(this.elementsCard).scrollIntoViewIfNeeded();
         await Helpers.waitAndClick(this.page, this.elementsCard);
     }
 
     // Text Box Actions
     async navigateToTextBox() {
+        await this.page.locator(this.textBoxMenu).scrollIntoViewIfNeeded();
         await Helpers.waitAndClick(this.page, this.textBoxMenu);
     }
 
@@ -93,7 +94,10 @@ export class ElementsPage {
     }
 
     async selectHomeCheckbox() {
-        await Helpers.waitAndClick(this.page, this.homeCheckbox);
+        // Toggle the checkbox by clicking the visible span holding the SVG
+        const checkbox = this.page.locator('span.rc-tree-checkbox').first();
+        await checkbox.scrollIntoViewIfNeeded();
+        await checkbox.click();
     }
 
     async expandAll() {
@@ -127,6 +131,14 @@ export class ElementsPage {
         await Helpers.waitAndFill(this.page, this.salaryInput, salary);
         await Helpers.waitAndFill(this.page, this.departmentInput, department);
         await Helpers.waitAndClick(this.page, this.submitFormButton);
+        // Wait for modal to disappear completely
+        await this.page.locator(this.registrationForm).waitFor({ state: 'hidden', timeout: 5000 });
+
+        // Final verification helper: search for the record
+        const searchBox = this.page.locator('input#searchBox');
+        await searchBox.fill(email);
+        // Ensure the table updates - increased timeout for stability
+        await this.page.waitForTimeout(2000);
     }
 
     // Buttons Actions

@@ -19,7 +19,7 @@ test.describe('Data-Driven Practice Form Tests', () => {
     test.beforeEach(async ({ page }) => {
         practiceFormPage = new PracticeFormPage(page);
         Logger.info('Navigating to Practice Form page');
-        await practiceFormPage.navigateTo();
+        await practiceFormPage.navigateToPracticeForm();
     });
 
 
@@ -43,7 +43,7 @@ test.describe('Data-Driven Practice Form Tests', () => {
                 // Close modal to reset state
                 await practiceFormPage.page.keyboard.press('Escape');
                 // Or just reload
-                await practiceFormPage.navigateTo();
+                await practiceFormPage.navigateToPracticeForm();
             });
         }
         Logger.info('Data-Driven Practice Form Tests completed');

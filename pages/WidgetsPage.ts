@@ -38,10 +38,10 @@ export class WidgetsPage {
         this.page = page;
 
         // Accordian
-        this.section1Header = page.locator('#section1Heading');
-        this.section1Content = page.locator('#section1Content');
-        this.section2Header = page.locator('#section2Heading');
-        this.section2Content = page.locator('#section2Content');
+        this.section1Header = page.locator('.accordion-header').filter({ hasText: 'What is Lorem Ipsum?' });
+        this.section1Content = this.section1Header.locator('xpath=..').locator('.accordion-collapse');
+        this.section2Header = page.locator('.accordion-header').filter({ hasText: 'Where does it come from?' });
+        this.section2Content = this.section2Header.locator('xpath=..').locator('.accordion-collapse');
 
         // Tabs
         this.whatTab = page.locator('#demo-tab-what');
@@ -69,10 +69,12 @@ export class WidgetsPage {
     }
 
     async toggleSection1() {
+        await this.section1Header.scrollIntoViewIfNeeded();
         await this.section1Header.click();
     }
 
     async toggleSection2() {
+        await this.section2Header.scrollIntoViewIfNeeded();
         await this.section2Header.click();
     }
 

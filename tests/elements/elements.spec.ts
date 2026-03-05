@@ -73,11 +73,11 @@ test.describe('DemoQA Elements Page Tests', () => {
             TestData.WEB_TABLE.DEPARTMENT
         );
 
-        // Verify the new record appears in the table
+        // Verify the new record appears in the table using row verification
         Logger.info('Verifying new record in table...');
-        const gridCell = page.locator(elementsPage.tableBody);
-        await expect(gridCell).toContainText(TestData.WEB_TABLE.EMAIL);
-        await expect(gridCell).toContainText(TestData.WEB_TABLE.FIRST_NAME);
+        const row = page.getByRole('row').filter({ hasText: TestData.WEB_TABLE.EMAIL });
+        await expect(row).toBeVisible();
+        await expect(row).toContainText(TestData.WEB_TABLE.FIRST_NAME);
         Logger.info('Web Tables - Add New Record test completed successfully');
     });
 
@@ -117,5 +117,51 @@ test.describe('DemoQA Elements Page Tests', () => {
         await expect(newPage).toHaveURL('https://demoqa.com/');
         await newPage.close();
         Logger.info('Links Redirection test completed successfully');
+    });
+
+    test('Negative - Text Box Invalid Email', async ({ page }) => {
+        Logger.info('Starting Negative - Text Box Invalid Email test');
+        await elementsPage.navigateToTextBox();
+
+        Logger.info('Filling form with invalid email...');
+        await elementsPage.fillTextBoxForm(
+            TestData.TEXT_BOX.FULL_NAME,
+            TestData.NEGATIVE.INVALID_EMAIL,
+            TestData.TEXT_BOX.CURRENT_ADDRESS,
+            TestData.TEXT_BOX.PERMANENT_ADDRESS
+        );
+
+        // DemoQA applies a "field-error" CSS class to the email input on invalid submission
+        const emailInput = page.locator('#userEmail');
+        await expect(emailInput).toHaveClass(/field-error/);
+
+        // Output area should NOT be visible
+        await expect(page.locator(elementsPage.outputArea)).not.toBeVisible();
+        Logger.info('Negative - Text Box Invalid Email test completed successfully');
+    });
+
+    test('Negative - Web Tables Empty Submission', async ({ page }) => {
+        Logger.info('Starting Negative - Web Tables Empty Submission test');
+        await elementsPage.navigateToWebTables();
+
+        Logger.info('Attempting to submit empty form...');
+        await page.click('#addNewRecordButton');
+        await page.click('#submit');
+
+        // Form should still be visible (not submitted)
+        await expect(page.locator('.modal-content')).toBeVisible();
+        Logger.info('Negative - Web Tables Empty Submission test completed successfully');
+    });
+
+    test('Negative - Buttons Single Click on Double Click Button', async ({ page }) => {
+        Logger.info('Starting Negative - Buttons Single Click test');
+        await elementsPage.navigateToButtons();
+
+        Logger.info('Performing single click on double-click button...');
+        await page.click('#doubleClickBtn');
+
+        // Message should NOT appear
+        await expect(page.locator(elementsPage.doubleClickMessage)).not.toBeVisible();
+        Logger.info('Negative - Buttons Single Click test completed successfully');
     });
 });

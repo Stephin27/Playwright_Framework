@@ -1,5 +1,6 @@
 import { Page, Locator } from '@playwright/test';
 import { BasePage } from './BasePage';
+import { Helpers } from '../utils/helpers';
 
 export class PracticeFormPage extends BasePage {
     readonly firstNameInput: Locator;
@@ -58,12 +59,25 @@ export class PracticeFormPage extends BasePage {
         this.dateYearSelect = page.locator('.react-datepicker__year-select');
     }
 
-    async navigateTo() {
+    async navigateToPracticeForm() {
+        // Block common ad and analytics domains
+        const blockedDomains = [
+            'googlesyndication.com', 'googletagmanager.com', 'google-analytics.com',
+            'doubleclick.net', 'adsystem.com', 'adnxs.com', 'amazon-adsystem.com'
+        ];
+        await this.page.route('**/*', (route) => {
+            if (blockedDomains.some(domain => route.request().url().includes(domain))) {
+                route.abort();
+            } else {
+                route.continue();
+            }
+        });
+
         const maxRetries = 3;
         for (let i = 0; i < maxRetries; i++) {
             try {
                 await this.page.goto('https://demoqa.com/automation-practice-form', {
-                    timeout: 60000,
+                    timeout: 45000,
                     waitUntil: 'domcontentloaded'
                 });
                 break;
@@ -72,8 +86,6 @@ export class PracticeFormPage extends BasePage {
                 console.log(`Navigation failed, retrying (${i + 1}/${maxRetries})...`);
             }
         }
-        // Remove ads and footer to avoid click interceptions
-        await this.page.addStyleTag({ content: '#fixedban { display: none !important; } footer { display: none !important; }' });
     }
 
     async fillForm(data: any) {
@@ -85,6 +97,7 @@ export class PracticeFormPage extends BasePage {
         else if (data.Gender === 'Female') await this.femaleRadio.click();
         else await this.otherRadio.click();
 
+        await this.mobileInput.scrollIntoViewIfNeeded();
         await this.mobileInput.fill(data.Mobile);
 
         // Date Logic
@@ -110,15 +123,15 @@ export class PracticeFormPage extends BasePage {
         if (data.Subjects) {
             const subjects = data.Subjects.split(',');
             for (const subject of subjects) {
-                await this.subjectsInput.fill(subject.trim());
-                // Wait for option to appear and ensure it's ready to be clicked
-                const option = this.page.locator('.subjects-auto-complete__option').first();
-                await option.waitFor({ state: 'visible' });
-                await option.click();
+                await this.subjectsInput.pressSequentially(subject.trim(), { delay: 100 });
+                // Small wait to ensure react select processes the input
+                await this.page.waitForTimeout(500);
+                await this.page.keyboard.press('Enter');
             }
         }
 
         if (data.Hobbies) {
+            // Using force: true to bypass potential ad overlays
             if (data.Hobbies.includes('Sports')) await this.hobbiesSportsCheckbox.click({ force: true });
             if (data.Hobbies.includes('Reading')) await this.hobbiesReadingCheckbox.click({ force: true });
             if (data.Hobbies.includes('Music')) await this.hobbiesMusicCheckbox.click({ force: true });
@@ -127,13 +140,18 @@ export class PracticeFormPage extends BasePage {
         await this.currentAddressInput.fill(data.Address);
 
         if (data.State) {
+            await this.stateSelect.scrollIntoViewIfNeeded();
             await this.stateSelect.click();
-            await this.page.getByText(data.State, { exact: true }).click();
+            // Wait for option to be visible and click it
+            const option = this.page.locator(`div[id^="react-select-3-option"]`).filter({ hasText: data.State }).first();
+            await option.click();
         }
 
         if (data.City) {
+            await this.citySelect.scrollIntoViewIfNeeded();
             await this.citySelect.click();
-            await this.page.getByText(data.City, { exact: true }).click();
+            const option = this.page.locator(`div[id^="react-select-4-option"]`).filter({ hasText: data.City }).first();
+            await option.click();
         }
     }
 

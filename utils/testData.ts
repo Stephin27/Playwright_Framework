@@ -12,9 +12,13 @@ export const TestData = {
     WEB_TABLE: {
         FIRST_NAME: 'Jane',
         LAST_NAME: 'Smith',
-        EMAIL: 'jane.smith@example.com',
+        EMAIL: 'jane.smith.stable@example.com',
         AGE: '30',
         SALARY: '50000',
         DEPARTMENT: 'Engineering'
+    },
+    NEGATIVE: {
+        INVALID_EMAIL: 'invalid-email',
+        EMPTY: ''
     }
 };

@@ -86,4 +86,30 @@ test.describe('DemoQA Alerts Tests', () => {
         await alertsPage.triggerPromptAlert();
         await expect(alertsPage.promptResult).toContainText(`You entered ${testName}`);
     });
+
+    test('Negative - Prompt Alert Dismiss', async ({ page }) => {
+        Logger.info('Starting Negative - Prompt Alert Dismiss test');
+        page.once('dialog', async dialog => {
+            Logger.info(`Dialog encountered: ${dialog.type()} - "${dialog.message()}". Dismissing...`);
+            await dialog.dismiss();
+        });
+
+        await alertsPage.triggerPromptAlert();
+        // Result should NOT be visible or should not contain "You entered"
+        await expect(alertsPage.promptResult).not.toBeVisible();
+        Logger.info('Negative - Prompt Alert Dismiss test completed successfully');
+    });
+
+    test('Negative - Prompt Alert Empty Submission', async ({ page }) => {
+        Logger.info('Starting Negative - Prompt Alert Empty Submission test');
+        page.once('dialog', async dialog => {
+            Logger.info(`Dialog encountered: ${dialog.type()} - "${dialog.message()}". Accepting empty...`);
+            await dialog.accept('');
+        });
+
+        await alertsPage.triggerPromptAlert();
+        // In DemoQA, if you accept empty, it doesn't show the result text at all
+        await expect(alertsPage.promptResult).not.toBeVisible();
+        Logger.info('Negative - Prompt Alert Empty Submission test completed successfully');
+    });
 });
